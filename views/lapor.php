@@ -13,12 +13,12 @@
     <form action="process.php" method="post">
         <label>Nama teman atau kerabat yang hilang</label>
         <br>
-        <input type="text" name="" required>
+        <input type="text" name="nama_korban" required>
 
         <br>
         <label for="hubungan">Hubungan dengan Anda</label>
         <br>
-        <select name="" id="hubungan" required>
+        <select name="hubungan" id="hubungan" required>
             <option value="">Pilih hubungan</option>
             <option value="suami">Suami</option>
             <option value="istri">Istri</option>
@@ -37,12 +37,12 @@
 
         <label for="tanggal_hilang">Tanggal hilang</label>
         <br>
-        <input type="date" id="tanggal_hilang" name="" required>
+        <input type="date" id="tanggal_hilang" name="tanggal" required>
         <br>
 
         <label for="hilang">Hilang karena</label>
         <br>
-        <select name="" id="hilang" required>
+        <select name="alasan_hilang" id="hilang" required>
             <option value="">Pilih Alasan Hilang</option>
             <option value="gempa">Gempa Bumi XXX</option>
             <option value="banjir">Banjir XXX</option>
@@ -58,7 +58,7 @@
 
         <label>Foto kerabat atau teman Anda yang hilang</label>
         <br>
-        <input type="file" name="foto" accept="image/*" required>
+        <input type="file" name="foto" accept="image/*" >
         <br>
 
         <label>Nama pelapor</label>

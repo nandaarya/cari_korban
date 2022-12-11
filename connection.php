@@ -2,7 +2,7 @@
 trait Connection{
     public function get_connection(){
         $host = "localhost";
-        $database = "korban";
+        $database = "carikorban";
         $username = "root";
         $password = "";
         $connect = new mysqli($host, $username, $password, $database);
