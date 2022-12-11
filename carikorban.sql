@@ -30,12 +30,12 @@ CREATE TABLE `korban` (
   `nama_korban` varchar(30) NOT NULL,
   `hubungan` varchar(10) NOT NULL,
   `lokasi` varchar(20) NOT NULL,
-  `tanggal` int(12) NOT NULL,
+  `tanggal` varchar(30) NOT NULL,
   `alasan_hilang` varchar(30) NOT NULL,
   `detail` varchar(255) NOT NULL,
   `nama_pelapor` varchar(30) NOT NULL,
-  `telepon` int(20) NOT NULL,
-  `email` varchar(30) NOT NULL,
+  `telepon` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
