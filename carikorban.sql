@@ -45,7 +45,9 @@ CREATE TABLE `korban` (
 INSERT INTO `korban` (`idx`, `nama_korban`, `hubungan`, `lokasi`, `tanggal`, `alasan_hilang`, `detail`, `nama_pelapor`, `telepon`, `email`) VALUES
 (1, 'Asep', 'Ayah', 'XXX', '12/11/2022', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com'),
 (2, 'Budi', 'Saudara', 'XXX', '12/11/2022', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com'),
-(3, 'Ani', 'Istri', 'XXX', '12/11/2022', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com')
+(3, 'Ani', 'Istri', 'XXX', '12/11/2022', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com'),
+(4, 'Ami', 'Istri', 'XXX', '12/11/2022', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com'),
+(5, 'Ana', 'Anak', 'XXX', '12/11/2022', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com')
 ;
 
 -- --------------------------------------------------------
