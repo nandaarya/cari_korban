@@ -35,3 +35,10 @@ if (isset($_POST['submit_edit'])) {
     $model->update($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email);
     header('location:..\views\datahilang.php');
 }
+
+if (isset($_GET['idx'])) {
+    $idx = $_GET['idx'];
+    $model = new Model();
+    $model->delete($idx);
+    header('location:..\views\datahilang.php');
+}

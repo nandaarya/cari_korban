@@ -41,4 +41,9 @@ class Model extends Connection
         $this->conn->query($sql);
     }
 
+    public function delete($idx)
+    {
+        $sql = "DELETE FROM korban WHERE idx = '$idx'";
+        $this->conn->query($sql);
+    }
 }
