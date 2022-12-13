@@ -13,4 +13,16 @@ class Model extends Connection
         $this->conn->query($sql);
     }
 
+    public function tampil_data()
+    {
+        $sql = "SELECT * FROM korban";
+        $bind = $this->conn->query($sql);
+        while ($obj = $bind->fetch_object()) {
+            $baris[] = $obj;
+        }
+        if (!empty($baris)) {
+            return $baris;
+        }
+    }
+
 }
