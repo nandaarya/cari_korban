@@ -47,6 +47,7 @@ $data = $model->edit($idx);
         <br>
         <br>
         <button type="submit" name="submit_edit">Submit</button>
+        <input type="hidden" name="idx" value="<?= $data->idx ?>">
     </form>
 </body>
 
