@@ -1,5 +1,5 @@
 <?php
-trait Connection{
+class Connection{
     public function get_connection(){
         $host = "localhost";
         $database = "carikorban";
