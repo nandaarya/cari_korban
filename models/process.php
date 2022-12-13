@@ -15,5 +15,5 @@ if (isset($_POST['submit_simpan'])) {
 
     $model = new Model();
     $model->insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email);
-    header('location:index.php');
+    header('location:..\views\datahilang.php');
 }

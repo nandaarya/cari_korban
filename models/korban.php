@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include '..\connection.php';
 class Model extends Connection
 {
     public function __construct()
