@@ -25,4 +25,20 @@ class Model extends Connection
         }
     }
 
+    public function edit($idx)
+    {
+        $sql = "SELECT * FROM korban WHERE idx = '$idx'";
+        $bind = $this->conn->query($sql);
+        while ($obj = $bind->fetch_object()) {
+            $baris = $obj;
+        }
+        return $baris;
+    }
+
+    public function update($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email)
+    {
+        $sql = "UPDATE korban SET nama_korban = '$nama_korban', hubungan = '$hubungan', lokasi = '$lokasi', tanggal = '$tanggal', alasan_hilang = '$alasan_hilang', detail = '$detail', nama_pelapor = '$nama_pelapor', telepon = '$telepon', email = '$email' WHERE idx = '$idx'";
+        $this->conn->query($sql);
+    }
+
 }
