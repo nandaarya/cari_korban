@@ -13,8 +13,9 @@ $index = 1;
 
 <body>
     <div>
-        <h1>Data Hilang</h1>
-        <!-- <a href="create.php">Tambah Data</a> -->
+        <h1>Data Korban Hilang</h1>
+        <h3>Tidak bisa menghubungi orang yang anda kenal ? Laporkan sekarang !</h3>
+        <a href="lapor.php">Lapor</a>
         <br><br>
         <table border="1">
             <thead>
