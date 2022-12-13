@@ -48,8 +48,8 @@ if (!empty($result)) {
                     <td><?= $data->detail ?></td>
                     <td><?= $data->nama_pelapor ?></td>
                     <td>
-                        <a name="edit" id="edit" href="edit.php?nim=<?= $data->idx ?>">Edit</a>
-                        <a name="hapus" id="hapus" href="process.php?nim=<?= $data->idx ?>">Delete</a>
+                        <a name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>">Edit</a>
+                        <a name="hapus" id="hapus" href="process.php?idx=<?= $data->idx ?>">Delete</a>
                     </td>
                 </tr>
                 <?php endforeach;
