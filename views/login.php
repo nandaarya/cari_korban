@@ -1,3 +1,20 @@
+<?php
+include '..\models\auth.php';
+$user = new Auth();
+
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $user->login($username, $password);
+}
+
+if (isset($_GET['msg'])) {
+    if ($_GET['msg'] == 'error') {
+        echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
+    }
+}
+?>
+
 <!doctype html>
 <html lang="en">
 

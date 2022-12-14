@@ -3,7 +3,6 @@ include '..\connection.php';
 
 class Auth extends Connection
 {
-    protected $conn;
     public function __construct()
     {
         $this->conn = $this->get_connection();
@@ -20,8 +19,7 @@ class Auth extends Connection
             $_SESSION['username'] = $username;
             header('location:..\views\datahilang.php');
         } else {
-            echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
-            header('location:..\views\login.php');
+            header('location:..\views\login.php?msg=error');
         }
     }
 }
