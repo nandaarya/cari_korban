@@ -1,6 +1,6 @@
 <?php
-class Connection{
-    public function get_connection(){
+abstract class Connection{
+    protected function get_connection(){
         $host = "localhost";
         $database = "carikorban";
         $username = "root";
