@@ -1,7 +1,7 @@
 <?php
 $idx = $_GET['idx'];
 include '..\models\korban.php';
-$model = new Model();
+$model = new Korban();
 $data = $model->edit($idx);
 ?>
 

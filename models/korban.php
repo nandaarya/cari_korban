@@ -1,6 +1,6 @@
 <?php
 include '..\connection.php';
-class Model extends Connection
+class Korban extends Connection
 {
     protected $conn;
     public function __construct()

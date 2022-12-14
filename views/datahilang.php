@@ -1,6 +1,6 @@
 <?php
 include '..\models\korban.php';
-$model = new Model();
+$model = new Korban();
 $index = 1;
 ?>
 
