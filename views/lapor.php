@@ -76,6 +76,7 @@
         <input type="email" id="email" name="email">
         <br><br>
 
+        <input type="hidden" name="status" value="Hilang">
         <button type="submit" name="submit_simpan">Laporkan Korban Hilang</button>
     </form>
 </body>
