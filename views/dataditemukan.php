@@ -14,7 +14,10 @@ $index = 1;
 <body>
     <div>
         <h1>Data Korban Ditemukan</h1>
-        <a href="lapor.php">Lapor</a>
+        <a href="lapor.php"><button type="button">Lapor</button></a>
+        <a href="datahilang.php"><button type="button">Data Hilang</button></a>
+        <a href="dataditemukan.php"><button type="button">Data Ditemukan</button></a>
+        <a href="logout.php"><button type="button">Logout</button></a>
         <br><br>
         <table border="1">
             <thead>

@@ -23,4 +23,16 @@ class Auth extends Connection
             header('location:..\views\login.php?msg=error');
         }
     }
+
+    public function logout()
+    {
+
+        // Hapus session 
+
+        session_destroy();
+
+        // Hapus user_session 
+
+        unset($_SESSION['username']);
+    }
 }
