@@ -43,7 +43,7 @@ CREATE TABLE `korban` (
 -- Dumping data for table `korban`
 --
 
-INSERT INTO `korban` (`idx`, `nama_korban`, `hubungan`, `lokasi`, `tanggal`, `alasan_hilang`, `detail`, `nama_pelapor`, `telepon`, `email`) VALUES
+INSERT INTO `korban` (`idx`, `nama_korban`, `hubungan`, `lokasi`, `tanggal`, `alasan_hilang`, `detail`, `nama_pelapor`, `telepon`, `email`, `status`) VALUES
 (1, 'Asep', 'Ayah', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Hilang'),
 (2, 'Budi', 'Saudara', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Hilang'),
 (3, 'Ani', 'Istri', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan'),
