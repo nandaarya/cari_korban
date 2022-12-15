@@ -8,13 +8,12 @@ $index = 1;
 <html lang="en">
 
 <head>
-    <title>Data Hilang</title>
+    <title>Data Ditemukan</title>
 </head>
 
 <body>
     <div>
-        <h1>Data Korban Hilang</h1>
-        <h3>Tidak bisa menghubungi orang yang anda kenal ? Laporkan sekarang !</h3>
+        <h1>Data Korban Ditemukan</h1>
         <a href="lapor.php">Lapor</a>
         <br><br>
         <table border="1">
@@ -69,7 +68,7 @@ $index = 1;
                 <?php endforeach;
                 } else { ?>
                 <tr>
-                    <td colspan="9">Belum ada data korban hilang.</td>
+                    <td colspan="9">Belum ada data korban ditemukan.</td>
                 </tr>
                 <?php } ?>
             </tbody>

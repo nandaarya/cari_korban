@@ -35,7 +35,8 @@ CREATE TABLE `korban` (
   `detail` varchar(255) NOT NULL,
   `nama_pelapor` varchar(30) NOT NULL,
   `telepon` varchar(30) NOT NULL,
-  `email` varchar(30) NOT NULL
+  `email` varchar(30) NOT NULL,
+  `status` varchar(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -43,11 +44,13 @@ CREATE TABLE `korban` (
 --
 
 INSERT INTO `korban` (`idx`, `nama_korban`, `hubungan`, `lokasi`, `tanggal`, `alasan_hilang`, `detail`, `nama_pelapor`, `telepon`, `email`) VALUES
-(1, 'Asep', 'Ayah', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com'),
-(2, 'Budi', 'Saudara', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com'),
-(3, 'Ani', 'Istri', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com'),
-(4, 'Ami', 'Istri', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com'),
-(5, 'Ana', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com')
+(1, 'Asep', 'Ayah', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Hilang'),
+(2, 'Budi', 'Saudara', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Hilang'),
+(3, 'Ani', 'Istri', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan'),
+(4, 'Ami', 'Istri', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Hilang'),
+(5, 'Ana', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan'),
+(6, 'Ari', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan'),
+(7, 'Ayu', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Hilang')
 ;
 
 -- --------------------------------------------------------
