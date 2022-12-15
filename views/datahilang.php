@@ -21,13 +21,14 @@ $index = 1;
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Nama Korban Hilang</th>
+                    <th>Nama Korban</th>
                     <th>Hubungan</th>
                     <th>Lokasi</th>
                     <th>Tanggal</th>
                     <th>Alasan Hilang</th>
                     <th>Detail Korban</th>
                     <th>Nama Pelapor</th>
+                    <th>Status</th>
                     <th>Operasi</th>
                 </tr>
             </thead>
@@ -60,6 +61,9 @@ $index = 1;
                     </td>
                     <td>
                         <?= $data->nama_pelapor ?>
+                    </td>
+                    <td>
+                        <?= $data->status ?>
                     </td>
                     <td>
                         <a name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>">Edit</a>

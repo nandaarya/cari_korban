@@ -20,7 +20,7 @@ $index = 1;
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Nama Korban Hilang</th>
+                    <th>Nama Korban</th>
                     <th>Hubungan</th>
                     <th>Lokasi</th>
                     <th>Tanggal</th>

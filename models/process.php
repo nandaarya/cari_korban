@@ -12,9 +12,10 @@ if (isset($_POST['submit_simpan'])) {
     $nama_pelapor = $_POST['nama_pelapor'];
     $telepon = $_POST['telepon'];
     $email = $_POST['email'];
+    $status = $_POST['status'];
 
     $model = new Korban();
-    $model->insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email);
+    $model->insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email, $status);
     header('location:..\views\datahilang.php');
 }
 
@@ -30,9 +31,10 @@ if (isset($_POST['submit_edit'])) {
     $nama_pelapor = $_POST['nama_pelapor'];
     $telepon = $_POST['telepon'];
     $email = $_POST['email'];
+    $status = $_POST['status'];
 
     $model = new Korban();
-    $model->update($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email);
+    $model->update($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email, $status);
     header('location:..\views\datahilang.php');
 }
 

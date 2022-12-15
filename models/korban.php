@@ -8,9 +8,9 @@ class Korban extends Connection
         $this->conn = $this->get_connection();
     }
 
-    public function insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email)
+    public function insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email, $status)
     {
-        $sql = "INSERT INTO korban (idx, nama_korban, hubungan, lokasi, tanggal, alasan_hilang, detail, nama_pelapor, telepon, email) VALUES ('$idx', '$nama_korban', '$hubungan', '$lokasi', '$tanggal', '$alasan_hilang', '$detail', '$nama_pelapor', '$telepon', '$email')";
+        $sql = "INSERT INTO korban (idx, nama_korban, hubungan, lokasi, tanggal, alasan_hilang, detail, nama_pelapor, telepon, email, status) VALUES ('$idx', '$nama_korban', '$hubungan', '$lokasi', '$tanggal', '$alasan_hilang', '$detail', '$nama_pelapor', '$telepon', '$email', '$status')";
         $this->conn->query($sql);
     }
 
@@ -36,9 +36,9 @@ class Korban extends Connection
         return $baris;
     }
 
-    public function update($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email)
+    public function update($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email, $status)
     {
-        $sql = "UPDATE korban SET nama_korban = '$nama_korban', hubungan = '$hubungan', lokasi = '$lokasi', tanggal = '$tanggal', alasan_hilang = '$alasan_hilang', detail = '$detail', nama_pelapor = '$nama_pelapor', telepon = '$telepon', email = '$email' WHERE idx = '$idx'";
+        $sql = "UPDATE korban SET nama_korban = '$nama_korban', hubungan = '$hubungan', lokasi = '$lokasi', tanggal = '$tanggal', alasan_hilang = '$alasan_hilang', detail = '$detail', nama_pelapor = '$nama_pelapor', telepon = '$telepon', email = '$email', status = '$status' WHERE idx = '$idx'";
         $this->conn->query($sql);
     }
 
