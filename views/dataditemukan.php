@@ -27,6 +27,7 @@ $index = 1;
                     <th>Alasan Hilang</th>
                     <th>Detail Korban</th>
                     <th>Nama Pelapor</th>
+                    <th>Status</th>
                     <th>Operasi</th>
                 </tr>
             </thead>
@@ -34,7 +35,8 @@ $index = 1;
                 <?php
                 $result = $model->tampil_data();
                 if (!empty($result)) {
-                    foreach ($result as $data): ?>
+                    foreach ($result as $data):
+                        if ($data->status == 'Ditemukan') { ?>
                 <tr>
                     <td>
                         <?= $index++ ?>
@@ -61,11 +63,14 @@ $index = 1;
                         <?= $data->nama_pelapor ?>
                     </td>
                     <td>
+                        <?= $data->status ?>
+                    </td>
+                    <td>
                         <a name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>">Edit</a>
                         <a name="hapus" id="hapus" href="..\models\process.php?idx=<?= $data->idx ?>">Delete</a>
                     </td>
                 </tr>
-                <?php endforeach;
+                <?php }endforeach;
                 } else { ?>
                 <tr>
                     <td colspan="9">Belum ada data korban ditemukan.</td>
