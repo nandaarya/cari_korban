@@ -70,7 +70,7 @@ $index = 1;
                         <a name="hapus" id="hapus" href="..\models\process.php?idx=<?= $data->idx ?>">Delete</a>
                     </td>
                 </tr>
-                <?php }endforeach;
+                <?php } endforeach;
                 } else { ?>
                 <tr>
                     <td colspan="9">Belum ada data korban ditemukan.</td>
