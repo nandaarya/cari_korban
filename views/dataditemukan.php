@@ -8,6 +8,7 @@ $index = 1;
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Data Ditemukan</title>
 </head>
 
@@ -69,11 +70,12 @@ $index = 1;
                         <?= $data->status ?>
                     </td>
                     <td>
-                        <a name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>">Edit</a>
-                        <a name="hapus" id="hapus" href="..\models\process.php?idx=<?= $data->idx ?>">Delete</a>
+                        <a name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>"><i class="fa fa-edit" style="font-size:14px;color:orange"></i></a>
+                        |
+                        <a name="hapus" id="hapus" href="..\models\process.php?idx=<?= $data->idx ?>"><i class="fa fa-trash-o" style="font-size:14px;color:red"></i></a>
                     </td>
                 </tr>
-                <?php } endforeach;
+                <?php }endforeach;
                 } else { ?>
                 <tr>
                     <td colspan="9">Belum ada data korban ditemukan.</td>
