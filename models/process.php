@@ -1,6 +1,5 @@
 <?php
 include 'korban.php';
-include 'auth.php';
 
 if (isset($_POST['submit_simpan'])) {
     $idx = $_POST['idx'];
