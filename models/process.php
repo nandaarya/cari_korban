@@ -1,6 +1,7 @@
 <?php
 include 'korban.php';
 
+// logic for insert data to database
 if (isset($_POST['submit_simpan'])) {
     $idx = $_POST['idx'];
     $nama_korban = $_POST['nama_korban'];
@@ -20,6 +21,7 @@ if (isset($_POST['submit_simpan'])) {
     header('location:..\views\datahilang.php');
 }
 
+// logic for edit data
 if (isset($_POST['submit_edit'])) {
     $idx = $_POST['idx'];
     $nama_korban = $_POST['nama_korban'];
@@ -39,6 +41,7 @@ if (isset($_POST['submit_edit'])) {
     header('location:..\views\datahilang.php');
 }
 
+// logic for delete data
 if (isset($_GET['idx'])) {
     $idx = $_GET['idx'];
     $model = new Korban();
