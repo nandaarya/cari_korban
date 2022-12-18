@@ -21,6 +21,12 @@ $index = 1;
         <a href="dataditemukan.php"><button type="button">Data Ditemukan</button></a>
         <a href="logout.php"><button type="button">Logout</button></a>
         <br><br>
+        <form action="datahilang.php" method="get">
+            <label>Cari :</label>
+                <input type="text" name="cari">
+            <input type="submit" value="Cari">
+        </form>
+        <br><br>
         <table border="1">
             <thead>
                 <tr>
