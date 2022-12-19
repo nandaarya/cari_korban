@@ -21,10 +21,10 @@ $index = 1;
         <a href="dataditemukan.php"><button type="button">Data Ditemukan</button></a>
         <a href="logout.php"><button type="button">Logout</button></a>
         <br><br>
-        <form action="datahilang.php" method="get">
+        <form action="process.php" method="get">
             <label>Cari :</label>
                 <input type="text" name="cari">
-            <input type="submit" value="Cari">
+            <input type="submit" value="cari">
         </form>
         <br><br>
         <table border="1">
@@ -44,7 +44,11 @@ $index = 1;
             </thead>
             <tbody>
                 <?php
-                $result = $model->tampil_data();
+                if (isset($_GET['search'])) {
+                    $result = $model->search($cari);
+                } else {
+                    $result = $model->tampil_data();
+                }
                 if (!empty($result)) {
                     foreach ($result as $data):
                         if ($data->status == 'Hilang') { ?>

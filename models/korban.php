@@ -26,6 +26,17 @@ class Korban extends Connection
         }
     }
 
+    public function search($cari) {
+        $sql = "SELECT * FROM korban WHERE nama_korban LIKE '%$cari%'";
+        $bind = $this->conn->query($sql);
+        while ($obj = $bind->fetch_object()) {
+            $baris[] = $obj;
+        }
+        if (!empty($baris)) {
+            return $baris;
+        }
+    }
+
     public function edit($idx)
     {
         $sql = "SELECT * FROM korban WHERE idx = '$idx'";
