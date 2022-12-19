@@ -21,9 +21,9 @@ $index = 1;
         <a href="dataditemukan.php"><button type="button">Data Ditemukan</button></a>
         <a href="logout.php"><button type="button">Logout</button></a>
         <br><br>
-        <form action="process.php" method="get">
+        <form action="datahilang.php" method="get">
             <label>Cari :</label>
-                <input type="text" name="cari">
+            <input type="text" name="cari">
             <input type="submit" value="cari">
         </form>
         <br><br>
@@ -44,7 +44,8 @@ $index = 1;
             </thead>
             <tbody>
                 <?php
-                if (isset($_GET['search'])) {
+                if (isset($_GET['cari'])) {
+                    $cari = $_GET['cari'];
                     $result = $model->search($cari);
                 } else {
                     $result = $model->tampil_data();

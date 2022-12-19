@@ -49,10 +49,10 @@ if (isset($_GET['idx'])) {
     header('location:..\views\datahilang.php');
 }
 
-// logic for search
-if (isset($_GET['cari'])) {
-    $cari = $_GET['cari'];
-    $model = new Korban();
-    $model->search($cari);
-    header('location:..\views\datahilang.php?search');
-}
+// // logic for search
+// if (isset($_GET['cari'])) {
+//     $cari = $_GET['cari'];
+//     $model = new Korban();
+//     $model->search($cari);
+//     header('location:..\views\datahilang.php?search');
+// }
