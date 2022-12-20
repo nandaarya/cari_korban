@@ -23,7 +23,7 @@ $index = 1;
         <br><br>
         <form action="datahilang.php" method="get">
             <label>Cari :</label>
-            <input type="text" name="cari">
+            <input type="text" name="cari" placeholder="Masukkan nama...">
             <input type="submit" value="cari">
         </form>
         <br><br>

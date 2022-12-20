@@ -13,7 +13,7 @@
     <form action="..\models\process.php" method="post">
         <label>Nama teman atau kerabat yang hilang</label>
         <br>
-        <input type="text" name="nama_korban" required>
+        <input type="text" name="nama_korban" placeholder="Masukkan Nama Korban" required>
 
         <br>
         <label for="hubungan">Hubungan dengan Anda</label>
@@ -32,7 +32,7 @@
 
         <label>Lokasi terakhir dilihat</label>
         <br>
-        <input type="text" name="lokasi" required>
+        <input type="text" name="lokasi" placeholder="Masukkan Lokasi Korban" required>
         <br>
 
         <label for="tanggal_hilang">Tanggal hilang</label>
@@ -53,7 +53,7 @@
 
         <label>Detail informasi yang dapat disampaikan</label>
         <br>
-        <input type="text" name="detail" required>
+        <input type="text" name="detail" placeholder="Masukkan Ciri Khas Korban" required>
         <br>
 
         <label>Foto kerabat atau teman Anda yang hilang</label>
@@ -63,17 +63,17 @@
 
         <label>Nama pelapor</label>
         <br>
-        <input type="text" name="nama_pelapor">
+        <input type="text" name="nama_pelapor" placeholder="Masukkan Nama Pelapor">
         <br>
 
         <label for="phone">No handphone pelapor</label>
         <br>
-        <input type="tel" id="phone" name="telepon" pattern="[0]{1}[8]{1}[0-9]{2}[0-9]{4}[0-9]{4}" required>
+        <input type="tel" id="phone" name="telepon" pattern="[0]{1}[8]{1}[0-9]{2}[0-9]{4}[0-9]{4}" placeholder="08XXXXXXXXXX" required>
         <br>
 
         <label for="email">Email pelapor</label>
         <br>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" placeholder="Masukkan Email">
         <br><br>
 
         <input type="hidden" name="status" value="Hilang">
