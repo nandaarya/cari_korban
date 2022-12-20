@@ -22,7 +22,7 @@ $index = 1;
         <a href="logout.php"><button type="button">Logout</button></a>
         <br><br>
         <form action="datahilang.php" method="get">
-            <label>Cari orang dekat anda yang hilang</label>
+            <label>Cari Dalam Data Korban Hilang</label>
             <br>
             <input type="text" name="cari" placeholder="Masukkan nama...">
             <input type="submit" value="cari">
