@@ -4,5 +4,4 @@ if (! isset($_SESSION['role'])) {
 }
 
 header("Location: views/datahilang.php");
-exit();
 ?>

@@ -14,7 +14,6 @@ $index = 1;
 
 <body>
     <div>
-        <h1><?php $_SESSION['role']?></h1>
         <h1>Data Korban Hilang</h1>
         <h3>Tidak bisa menghubungi orang yang anda kenal ? Laporkan sekarang !</h3>
         <a href="lapor.php"><button type="button">Lapor</button></a>
