@@ -17,7 +17,7 @@ class Auth extends Connection
         $bind = $this->conn->query($sql);
         $baris = $bind->fetch_object();
         if ($baris != null) {
-            $_SESSION['username'] = $username;
+            $_SESSION['role'] = $baris->role;
             header('location:..\views\datahilang.php');
         } else {
             header('location:..\views\login.php?msg=error');
@@ -33,6 +33,6 @@ class Auth extends Connection
 
         // Hapus user_session 
 
-        unset($_SESSION['username']);
+        unset($_SESSION['role']);
     }
 }
