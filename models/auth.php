@@ -17,7 +17,8 @@ class Auth extends Connection
         $bind = $this->conn->query($sql);
         $baris = $bind->fetch_object();
         if ($baris != null) {
-            // $_SESSION['role'] != $baris->role;
+            session_start();
+            $_SESSION['role'] = $baris->role;
             header('location:..\views\datahilang.php');
         } else {
             header('location:..\views\login.php?msg=error');

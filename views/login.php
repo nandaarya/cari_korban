@@ -3,6 +3,7 @@ include '..\models\auth.php';
 $user = new Auth();
 
 if (isset($_POST['submit'])) {
+    $user->logout();
     $username = $_POST['username'];
     $password = $_POST['password'];
     $user->login($username, $password);

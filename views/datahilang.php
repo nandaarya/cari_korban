@@ -1,7 +1,12 @@
 <?php
 include '..\models\korban.php';
+session_start();
 $model = new Korban();
 $index = 1;
+
+if (! isset($_SESSION['role'])) {
+    $_SESSION['role'] = 'Guest';
+}
 ?>
 
 <!doctype html>
@@ -14,6 +19,7 @@ $index = 1;
 
 <body>
     <div>
+        <h1><?php echo $_SESSION['role'] ?></h1>
         <h1>Data Korban Hilang</h1>
         <h3>Tidak bisa menghubungi orang yang anda kenal ? Laporkan sekarang !</h3>
         <a href="lapor.php"><button type="button">Lapor</button></a>
