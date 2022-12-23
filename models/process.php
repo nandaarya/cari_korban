@@ -16,8 +16,14 @@ if (isset($_POST['submit_simpan'])) {
     $email = $_POST['email'];
     $status = $_POST['status'];
 
+    $tempdir = "../assets/images/"; //Nama folder tempat menyimpan file
+    $target_path = $tempdir . basename($_FILES['foto']['name']); //set upload path folder
+    $nama_gambar = $_FILES['foto']['name'];
+    $fileinfo = @getimagesize($_FILES["foto"]["tmp_name"]);
+    $file_gambar = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
+
     $model = new Korban();
-    $model->insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email, $status);
+    $model->insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email, $status, $nama_gambar, $file_gambar);
     header('location:..\views\datahilang.php');
 }
 

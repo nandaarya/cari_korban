@@ -10,7 +10,7 @@
     <h4>Mohon mengisi form berikut untuk melaporkan kerabat atau teman Anda yang hilang atau belum diketahui
         keberadaannya.</h4>
     <br>
-    <form action="..\models\process.php" method="post">
+    <form action="..\models\process.php" method="post" enctype='multipart/form-data'>
         <label>Nama teman atau kerabat yang hilang</label>
         <br>
         <input type="text" name="nama_korban" placeholder="Masukkan Nama Korban" required>

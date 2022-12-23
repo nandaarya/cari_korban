@@ -8,9 +8,10 @@ class Korban extends Connection
         $this->conn = $this->get_connection();
     }
 
-    public function insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email, $status)
+    public function insert($idx, $nama_korban, $hubungan, $lokasi, $tanggal, $alasan_hilang, $detail, $nama_pelapor, $telepon, $email, $status, $nama_gambar, $file_gambar)
     {
-        $sql = "INSERT INTO korban (idx, nama_korban, hubungan, lokasi, tanggal, alasan_hilang, detail, nama_pelapor, telepon, email, status) VALUES ('$idx', '$nama_korban', '$hubungan', '$lokasi', '$tanggal', '$alasan_hilang', '$detail', '$nama_pelapor', '$telepon', '$email', '$status')";
+        $sql = "INSERT INTO korban (idx, nama_korban, hubungan, lokasi, tanggal, alasan_hilang, detail, nama_pelapor, telepon, email, status, nama_gambar, file_gambar) 
+        VALUES ('$idx', '$nama_korban', '$hubungan', '$lokasi', '$tanggal', '$alasan_hilang', '$detail', '$nama_pelapor', '$telepon', '$email', '$status', '$nama_gambar', '$file_gambar')";
         $this->conn->query($sql);
     }
 
@@ -36,6 +37,15 @@ class Korban extends Connection
             return $baris;
         }
     }
+
+    // public function lihat_foto ($idx) {
+    //     $sql = "SELECT * FROM korban WHERE idx = '$idx'";
+    //     $bind = $this->conn->query($sql);
+    //     while ($obj = $bind->fetch_object()) {
+    //         $baris[] = $obj;
+    //     }
+    //     return $baris;
+    // }
 
     public function edit($idx)
     {
