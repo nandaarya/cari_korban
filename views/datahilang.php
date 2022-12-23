@@ -97,6 +97,9 @@ if (!isset($_SESSION['role'])) {
                     </td>
                     <td>
                         <?php if ($_SESSION['role'] == 'Admin') { ?>
+                        <a title="Lihat Foto" name="foto" id="foto" href="..\assets\images\<?= $data->foto ?>"><i
+                                class="fa fa-picture-o" style="font-size:14px;color:blue"></i></a>
+                        |
                         <a title="Ubah" name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>"><i class="fa fa-edit"
                                 style="font-size:14px;color:orange"></i></a>
                         |
