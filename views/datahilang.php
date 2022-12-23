@@ -97,10 +97,10 @@ if (!isset($_SESSION['role'])) {
                     </td>
                     <td>
                         <?php if ($_SESSION['role'] == 'Admin') { ?>
-                        <a name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>"><i class="fa fa-edit"
+                        <a title="Ubah" name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>"><i class="fa fa-edit"
                                 style="font-size:14px;color:orange"></i></a>
                         |
-                        <a name="hapus" id="hapus" href="..\models\process.php?idx=<?= $data->idx ?>"><i
+                        <a title="Hapus" name="hapus" id="hapus" href="..\models\process.php?idx=<?= $data->idx ?>"><i
                                 class="fa fa-trash-o" style="font-size:14px;color:red"></i></a>
                         <?php } else {
                                 echo "Tidak ada akses";
