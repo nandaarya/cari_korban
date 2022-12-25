@@ -92,6 +92,10 @@ $index = 1;
                     </td>
                     <td>
                         <?php if ($_SESSION['role'] == 'Admin') { ?>
+                        <a title="Lihat Foto" name="foto" id="foto" target="_blank" rel="noopener noreferrer"
+                            href="lihatfoto.php?idx=<?= $data->idx ?>"><i class="fa fa-picture-o"
+                                style="font-size:14px;color:blue"></i></a>
+                        |
                         <a name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>"><i class="fa fa-edit"
                                 style="font-size:14px;color:orange"></i></a>
                         |
@@ -99,7 +103,7 @@ $index = 1;
                                 class="fa fa-trash-o" style="font-size:14px;color:red"></i></a>
                         <?php } else {
                                 echo "Tidak ada akses";
-                            }?>
+                            } ?>
                     </td>
                 </tr>
                 <?php }endforeach;
