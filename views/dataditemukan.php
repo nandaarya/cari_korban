@@ -2,6 +2,7 @@
 include '..\models\korban.php';
 session_start();
 $model = new Korban();
+$model2 = new KorbanDitemukan();
 $index = 1;
 ?>
 
@@ -55,13 +56,12 @@ $index = 1;
                 <?php
                 if (isset($_GET['cari'])) {
                     $cari = $_GET['cari'];
-                    $result = $model->search($cari);
+                    $result = $model2->search($cari);
                 } else {
-                    $result = $model->tampil_data();
+                    $result = $model2->tampil_data();
                 }
                 if (!empty($result)) {
-                    foreach ($result as $data):
-                        if ($data->status == 'Ditemukan') { ?>
+                    foreach ($result as $data): ?>
                 <tr>
                     <td>
                         <?= $index++ ?>
@@ -106,7 +106,7 @@ $index = 1;
                             } ?>
                     </td>
                 </tr>
-                <?php }endforeach;
+                <?php endforeach;
                 } else { ?>
                 <tr>
                     <td colspan="9">Belum ada data korban ditemukan.</td>

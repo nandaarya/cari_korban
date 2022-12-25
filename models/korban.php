@@ -2,7 +2,7 @@
 include '..\connection.php';
 class Korban extends Connection
 {
-    protected $conn;
+    private $conn;
     public function __construct()
     {
         $this->conn = $this->get_connection();
@@ -27,7 +27,8 @@ class Korban extends Connection
         }
     }
 
-    public function search($cari) {
+    public function search($cari)
+    {
         $sql = "SELECT * FROM korban WHERE nama_korban LIKE '%$cari%'";
         $bind = $this->conn->query($sql);
         while ($obj = $bind->fetch_object()) {
@@ -58,5 +59,69 @@ class Korban extends Connection
     {
         $sql = "DELETE FROM korban WHERE idx = '$idx'";
         $this->conn->query($sql);
+    }
+}
+
+class KorbanHilang extends Korban
+{
+    private $conn;
+    public function __construct()
+    {
+        $this->conn = $this->get_connection();
+    }
+    public function tampil_data()
+    {
+        $sql = "SELECT * FROM korban WHERE status = 'Hilang'";
+        $bind = $this->conn->query($sql);
+        while ($obj = $bind->fetch_object()) {
+            $baris[] = $obj;
+        }
+        if (!empty($baris)) {
+            return $baris;
+        }
+    }
+
+    public function search($cari)
+    {
+        $sql = "SELECT * FROM korban WHERE nama_korban LIKE '%$cari%' AND status = 'Hilang'";
+        $bind = $this->conn->query($sql);
+        while ($obj = $bind->fetch_object()) {
+            $baris[] = $obj;
+        }
+        if (!empty($baris)) {
+            return $baris;
+        }
+    }
+}
+
+class KorbanDitemukan extends Korban
+{
+    private $conn;
+    public function __construct()
+    {
+        $this->conn = $this->get_connection();
+    }
+    public function tampil_data()
+    {
+        $sql = "SELECT * FROM korban WHERE status = 'Ditemukan'";
+        $bind = $this->conn->query($sql);
+        while ($obj = $bind->fetch_object()) {
+            $baris[] = $obj;
+        }
+        if (!empty($baris)) {
+            return $baris;
+        }
+    }
+
+    public function search($cari)
+    {
+        $sql = "SELECT * FROM korban WHERE nama_korban LIKE '%$cari%' AND status = 'Ditemukan'";
+        $bind = $this->conn->query($sql);
+        while ($obj = $bind->fetch_object()) {
+            $baris[] = $obj;
+        }
+        if (!empty($baris)) {
+            return $baris;
+        }
     }
 }

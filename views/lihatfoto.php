@@ -13,7 +13,7 @@ if (!empty($result)) {
         echo '<img src="..\assets\images\foto_kosong.jpg" width="200px" height="200px"/>';
       } else {?>
         <?Php echo"<h2>Foto $data->nama_korban</h2>" ?><?php
-        echo '<img src="data:image/jpeg;base64,' . base64_encode($data->file_gambar) . '"/>';
+        echo '<img src="data:image/jpeg;base64,' . base64_encode($data->file_gambar) . '" width="200px" height="200px"/>';
       }
     }
   endforeach;

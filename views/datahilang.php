@@ -2,6 +2,7 @@
 include '..\models\korban.php';
 session_start();
 $model = new Korban();
+$model2 = new KorbanHilang();
 $index = 1;
 
 if (!isset($_SESSION['role'])) {
@@ -60,13 +61,12 @@ if (!isset($_SESSION['role'])) {
                 <?php
                 if (isset($_GET['cari'])) {
                     $cari = $_GET['cari'];
-                    $result = $model->search($cari);
+                    $result = $model2->search($cari);
                 } else {
-                    $result = $model->tampil_data();
+                    $result = $model2->tampil_data();
                 }
                 if (!empty($result)) {
-                    foreach ($result as $data):
-                        if ($data->status == 'Hilang') { ?>
+                    foreach ($result as $data): ?>
                 <tr>
                     <td>
                         <?= $index++ ?>
@@ -111,7 +111,7 @@ if (!isset($_SESSION['role'])) {
                             } ?>
                     </td>
                 </tr>
-                <?php }endforeach;
+                <?php endforeach;
                 } else { ?>
                 <tr>
                     <td colspan="9">Belum ada data korban hilang.</td>

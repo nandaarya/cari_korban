@@ -58,12 +58,12 @@
 
         <label>Foto kerabat atau teman Anda yang hilang</label>
         <br>
-        <input type="file" name="foto" accept="image/*" >
+        <input type="file" name="foto" accept="image/*" required>
         <br>
 
         <label>Nama pelapor</label>
         <br>
-        <input type="text" name="nama_pelapor" placeholder="Masukkan Nama Pelapor">
+        <input type="text" name="nama_pelapor" placeholder="Masukkan Nama Pelapor" required>
         <br>
 
         <label for="phone">No handphone pelapor</label>
@@ -73,7 +73,7 @@
 
         <label for="email">Email pelapor</label>
         <br>
-        <input type="email" id="email" name="email" placeholder="Masukkan Email">
+        <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
         <br><br>
 
         <input type="hidden" name="status" value="Hilang">
