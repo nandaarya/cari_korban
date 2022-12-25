@@ -38,15 +38,6 @@ class Korban extends Connection
         }
     }
 
-    // public function lihat_foto ($idx) {
-    //     $sql = "SELECT * FROM korban WHERE idx = '$idx'";
-    //     $bind = $this->conn->query($sql);
-    //     while ($obj = $bind->fetch_object()) {
-    //         $baris[] = $obj;
-    //     }
-    //     return $baris;
-    // }
-
     public function edit($idx)
     {
         $sql = "SELECT * FROM korban WHERE idx = '$idx'";
