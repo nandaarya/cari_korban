@@ -22,24 +22,39 @@ $data = $model->edit($idx);
         <input type="text" name="nama_korban" value="<?= $data->nama_korban ?>">
         <br>
         
-        <label>Hubungan</label>
+        <label for="hubungan">Hubungan dengan Anda</label>
         <br>
-        <input type="text" name="hubungan" value="<?= $data->hubungan ?>">
+        <select name="hubungan" id="hubungan" required>
+            <option value="">Pilih hubungan</option>
+            <option value="suami">Suami</option>
+            <option value="istri">Istri</option>
+            <option value="ayah">Ayah</option>
+            <option value="ibu">Ibu</option>
+            <option value="anak">Anak</option>
+            <option value="saudara">Saudara</option>
+            <option value="teman">Teman</option>
+        </select>
         <br>
 
-        <label>Lokasi</label>
+        <label>Lokasi terakhir dilihat</label>
         <br>
         <input type="text" name="lokasi" value="<?= $data->lokasi ?>">
         <br>
 
-        <label>Tanggal</label>
+        <label>Tanggal Hilang</label>
         <br>
         <input type="date" name="tanggal" value="<?= $data->tanggal ?>">
         <br>
 
-        <label>Alasan Hilang</label>
+        <label for="hilang">Alasan Hilang</label>
         <br>
-        <input type="text" name="alasan_hilang" value="<?= $data->alasan_hilang ?>">
+        <select name="alasan_hilang" id="hilang" required>
+            <option value="">Pilih Alasan Hilang</option>
+            <option value="gempa">Gempa Bumi XXX</option>
+            <option value="banjir">Banjir XXX</option>
+            <option value="longsor">Tanah Longsor XXX</option>
+            <option value="tsunami">Tsunami XXX</option>
+        </select>
         <br>
 
         <label>Detail Korban</label>

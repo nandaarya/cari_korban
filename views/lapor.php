@@ -40,7 +40,7 @@
         <input type="date" id="tanggal_hilang" name="tanggal" required>
         <br>
 
-        <label for="hilang">Hilang karena</label>
+        <label for="hilang">Alasan Hilang</label>
         <br>
         <select name="alasan_hilang" id="hilang" required>
             <option value="">Pilih Alasan Hilang</option>
