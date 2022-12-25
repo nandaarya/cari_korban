@@ -97,9 +97,8 @@ if (!isset($_SESSION['role'])) {
                     </td>
                     <td>
                         <?php if ($_SESSION['role'] == 'Admin') { ?>
-                        <img width="100px" height="100px" src="data:image/jpeg;base64,<?= base64_encode($data->file_gambar) ?>">
                         <a title="Lihat Foto" name="foto" id="foto" target="_blank" rel="noopener noreferrer"
-                            href="lihatfoto.php?idx=<?php $data->idx ?>"><i
+                            href="lihatfoto.php?idx=<?= $data->idx ?>"><i
                                 class="fa fa-picture-o" style="font-size:14px;color:blue"></i></a>
                         |
                         <a title="Ubah" name="edit" id="edit" href="edit.php?idx=<?= $data->idx ?>"><i
