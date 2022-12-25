@@ -16,7 +16,7 @@ $index = 1;
 
 <body>
     <div>
-        <h1><?php echo $_SESSION['role'] ?></h1>
+        <!-- <h1><?php echo $_SESSION['role'] ?></h1> -->
         <h1>Data Korban Ditemukan</h1>
         <a href="lapor.php"><button type="button">Lapor</button></a>
         <a href="datahilang.php"><button type="button">Data Hilang</button></a>
