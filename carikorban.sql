@@ -3,6 +3,12 @@ SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `korban`
+--
+
 CREATE TABLE `login` (
   `id` int(11) NOT NULL,
   `username` varchar(30) NOT NULL,
