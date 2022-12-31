@@ -22,6 +22,7 @@ if (!isset($_SESSION['role'])) {
     <div>
         <h1>Data Korban Hilang</h1>
         <h3>Tidak bisa menghubungi orang yang anda kenal ? Laporkan sekarang !</h3>
+        <!-- button in header -->
         <a href="lapor.php"><button type="button">Lapor</button></a>
         <a href="datahilang.php"><button type="button">Data Hilang</button></a>
         <a href="dataditemukan.php"><button type="button">Data Ditemukan</button></a>
