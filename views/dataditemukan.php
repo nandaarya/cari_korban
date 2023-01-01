@@ -17,6 +17,7 @@ $index = 1;
 <body>
     <div>
         <h1>Data Korban Ditemukan</h1>
+        <!-- button in header -->
         <a href="lapor.php"><button type="button">Lapor</button></a>
         <a href="datahilang.php"><button type="button">Data Hilang</button></a>
         <a href="dataditemukan.php"><button type="button">Data Ditemukan</button></a>
