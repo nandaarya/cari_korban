@@ -9,11 +9,7 @@ Cara Eksekusi Web dengan bantuan XAMPP
 6. Jika sudah dibuat, masuk ke menu import lalu import file carikorban.sql dari folder project ini. setelah itu klik go.
 7. Jika sudah centang semua, maka database berhasil dimasukkan. 
 8. lalu buka web di browser dengan http://localhost/carikorban atau sesuaikan nama foldernya jika nama folder berubah.
-9. Seteleah berhasil masuk ke login page, anda bisa mencoba login dengan:
-  1.) UNTUK HAK AKSES ADMIN
-      username: admin
-      password: admin
-  2.) UNTUK HAK AKSES GUEST
-      username: guest
-      password: guest
-10. Selamat mencoba !!! :) 
+9. setelah masuk ke web akan langsung diarahkan ke page data hilang dengan role guest secara otomatis
+10. Jika ingin mengubah ke role admin bisa lewat button login dengan 
+username: admin
+password: admin
