@@ -60,6 +60,7 @@ $index = 1;
         <br>
         <h4>Data Korban Ditemukan</h4>
         <br>
+        
         <form action="dataditemukan.php" method="get">
         <label class="form-label">Cari Dalam Data Korban Ditemukan</label>
             <div class="input-group my-1" style="width: 40%;">

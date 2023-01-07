@@ -9,6 +9,7 @@ if (isset($_POST['submit'])) {
     $user->login($username, $password);
 }
 
+# menampilkan pesan error
 if (isset($_GET['msg'])) {
     if ($_GET['msg'] == 'error') {
         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";

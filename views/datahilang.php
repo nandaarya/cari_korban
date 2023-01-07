@@ -65,6 +65,7 @@ if (!isset($_SESSION['role'])) {
         <h5>Tidak bisa menghubungi orang yang anda kenal ? Laporkan sekarang !</h5>
         <a href="lapor.php" class="btn btn-submit" >Lapor</a>
         <br>
+
         <form action="datahilang.php" method="get">
         <br>
         <label class="form-label">Cari Dalam Data Korban Hilang</label>
