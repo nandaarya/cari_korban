@@ -13,3 +13,4 @@ Cara Eksekusi Web dengan bantuan XAMPP
 10. Jika ingin mengubah ke role admin bisa lewat button login dengan 
 username: admin
 password: admin
+11. Selamat mencoba :)
