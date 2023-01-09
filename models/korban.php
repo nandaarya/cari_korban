@@ -1,6 +1,6 @@
 <?php
 include '..\connection.php';
-# first class
+
 class Korban extends Connection
 {
     private $conn;
@@ -63,7 +63,6 @@ class Korban extends Connection
     }
 }
 
-#second class
 class KorbanHilang extends Korban
 {
     private $conn;
@@ -71,7 +70,7 @@ class KorbanHilang extends Korban
     {
         $this->conn = $this->get_connection();
     }
-    # polimorfisme
+
     public function tampil_data()
     {
         $sql = "SELECT * FROM korban WHERE status = 'Hilang'";
@@ -96,7 +95,7 @@ class KorbanHilang extends Korban
         }
     }
 }
-# third class
+
 class KorbanDitemukan extends Korban
 {
     private $conn;
@@ -104,7 +103,7 @@ class KorbanDitemukan extends Korban
     {
         $this->conn = $this->get_connection();
     }
-    # polimorfisme
+
     public function tampil_data()
     {
         $sql = "SELECT * FROM korban WHERE status = 'Ditemukan'";
