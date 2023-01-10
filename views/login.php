@@ -9,7 +9,6 @@ if (isset($_POST['submit'])) {
     $user->login($username, $password);
 }
 
-# menampilkan pesan error
 if (isset($_GET['msg'])) {
     if ($_GET['msg'] == 'error') {
         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
@@ -55,9 +54,6 @@ if (isset($_GET['msg'])) {
         body {
         background: #245786;
         display: flex;
-        /* -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover; */
         background-size: cover;
         font-family: 'Roboto', sans-serif;
         }
@@ -69,7 +65,6 @@ if (isset($_GET['msg'])) {
             padding: 40px;
             width: 274px;
             background-color: #F7F7F7;
-            /* margin: 100px 500px 0px; */
             overflow: hidden;
             color: #7a7a7a;
             border-radius: 10px;
@@ -79,18 +74,9 @@ if (isset($_GET['msg'])) {
         }
 
         .login-card h2 {
-        /* font-weight: 50; */
         text-align: center;
         font-size: 1.3em;
         }
-
-        /* .login-card input[type=submit] {
-            width: 100%;
-            display: block;
-            margin-bottom: 10px;
-            position: relative;
-            border-radius: 10px;
-        } */
 
         .login-card input[type=text], input[type=password] {
             height: 44px;
@@ -123,56 +109,12 @@ if (isset($_GET['msg'])) {
             height: 36px;
             padding: 0 8px;
         }
-
-        /* .login-submit {
-            border: 0px;
-            color: #fff;
-            text-shadow: 0 1px rgba(0,0,0,0.1); 
-            background-color: #4d90fe;
-        }
-
-        .login-submit:hover {
-            border: 0px;
-            text-shadow: 0 1px rgba(0,0,0,0.3);
-            background-color: #357ae8;
-        } */
-
-        /* .login-card a {
-        text-decoration: none;
-        color: #666;
-        font-weight: 400;
-        text-align: center;
-        display: inline-block;
-        opacity: 0.6;
-        transition: opacity ease 0.5s;
-        }
-
-        .login-card a:hover {
-        opacity: 1;
-        }
-
-        .login-help {
-        width: 100%;
-        text-align: center;
-        font-size: 12px;
-        } */
         
         .login-card .avatar img {
             position: right;
             padding: 5px;
             margin: 0 45px;
         }
-
-        /* .login-card .btn, .login-card .btn:active {
-            font-size: 16px;
-            font-weight: bold;
-            background: #70c5c0 !important;
-            border: none;
-            margin-bottom: 20px;
-        }
-        .login-card .btn:hover, .login-card .btn:focus {
-            background: #50b8b3 !important;
-        } */
 
         .login-card .btn-submit{
             background-color: #245786;

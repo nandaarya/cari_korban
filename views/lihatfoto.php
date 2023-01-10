@@ -3,7 +3,6 @@ include '..\models\korban.php';
 $model = new Korban();
 
 $idx = $_GET['idx'];
-// show the image
 $result = $model->tampil_data();
 if (!empty($result)) {
   foreach ($result as $data):
