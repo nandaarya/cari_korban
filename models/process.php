@@ -10,7 +10,6 @@ if (isset($_POST['submit_simpan'])) {
     $tanggal = $_POST['tanggal'];
     $alasan_hilang = $_POST['alasan_hilang'];
     $detail = $_POST['detail'];
-    // $foto = $_POST['foto'];
     $nama_pelapor = $_POST['nama_pelapor'];
     $telepon = $_POST['telepon'];
     $email = $_POST['email'];

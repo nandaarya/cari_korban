@@ -27,13 +27,7 @@ class Auth extends Connection
 
     public function logout()
     {
-
-        // Hapus session 
-
         session_destroy();
-
-        // Hapus user_session 
-
         unset($_SESSION['role']);
     }
 }
