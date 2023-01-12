@@ -156,6 +156,7 @@ $index = 1;
             </tbody>
         </table>
     </div>
+    <!-- styling css -->
     <style>
         *,
         html,

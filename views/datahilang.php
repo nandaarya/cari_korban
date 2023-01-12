@@ -165,6 +165,7 @@ if (!isset($_SESSION['role'])) {
             </tbody>
         </table>
     </div>
+    <!-- styling css -->
     <style>
         *,
         html,

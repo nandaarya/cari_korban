@@ -116,6 +116,7 @@ $data = $model->edit($idx);
         <br><br><br>
     </form>
 
+    <!-- styling css -->
     <style>
         *,
         html,

@@ -47,7 +47,7 @@ if (isset($_GET['msg'])) {
         <button type="submit" name="submit" class="btn btn-submit">Login</button>
     </form>
 
-
+    <!-- styling css -->
     <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
 

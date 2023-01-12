@@ -135,6 +135,7 @@ session_start();
         <button class="button" type="submit" name="submit_simpan" style="vertical-align:middle"><span>Laporkan Korban Hilang</span></button>
     <br><br><br>
     </form>
+    <!-- styling css -->
     <style>
         *,
         html,
