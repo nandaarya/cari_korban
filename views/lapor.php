@@ -8,7 +8,8 @@ session_start();
 <head>
     <title>Lapor</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +24,8 @@ session_start();
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="#">CariKorban</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -39,13 +41,14 @@ session_start();
                     </li>
                 </ul>
                 <?php
-                    if ($_SESSION['role'] == 'Admin') { ?>
-                    <a href="logout.php"><button type="button" class="d-flex btn btn-danger my-2 my-sm-0">Logout</button></a>
+                if ($_SESSION['role'] == 'Admin') { ?>
+                    <a href="logout.php"><button type="button"
+                            class="d-flex btn btn-danger my-2 my-sm-0">Logout</button></a>
                     <?php
-                    } else { ?>
+                } else { ?>
                     <a href="login.php"><button type="button" class="d-flex btn btn-primary my-2 my-sm-0">Login</button></a>
                     <?php
-                    } ?>
+                } ?>
             </div>
         </div>
     </nav>
@@ -60,7 +63,7 @@ session_start();
             <br>
             <input class="form-control" type="text" name="nama_korban" placeholder="Masukkan Nama Korban" required>
         </div>
-        
+
         <div class="mb-3">
             <label class="form-label" for="hubungan">Hubungan dengan Anda</label>
             <br>
@@ -75,19 +78,19 @@ session_start();
                 <option value="teman">Teman</option>
             </select>
         </div>
-        
+
         <div class="mb-3">
             <label class="form-label">Lokasi terakhir dilihat</label>
             <br>
             <input class="form-control" type="text" name="lokasi" placeholder="Masukkan Lokasi Korban" required>
         </div>
-        
+
         <div class="mb-3">
-            <label class="form-label"for="tanggal_hilang">Tanggal hilang</label>
+            <label class="form-label" for="tanggal_hilang">Tanggal hilang</label>
             <br>
             <input class="form-control" type="date" id="tanggal_hilang" name="tanggal" required>
         </div>
-        
+
         <div class="mb-3">
             <label class="form-label" for="hilang">Alasan Hilang</label>
             <br>
@@ -99,41 +102,43 @@ session_start();
                 <option value="tsunami">Tsunami XXX</option>
             </select>
         </div>
-        
+
         <div class="mb-3">
             <label class="form-label">Detail informasi yang dapat disampaikan</label>
             <br>
-            <input class="form-control"type="text" name="detail" placeholder="Masukkan Ciri Khas Korban" required>
+            <input class="form-control" type="text" name="detail" placeholder="Masukkan Ciri Khas Korban" required>
         </div>
-        
+
         <div class="mb-3">
             <label class="form-label">Foto kerabat atau teman Anda yang hilang</label>
             <br>
             <input class="form-control" type="file" name="foto" accept="image/*" required>
         </div>
-        
+
         <div class="mb-3">
             <label class="form-label">Nama pelapor</label>
             <br>
-            <input class="form-control"type="text" name="nama_pelapor" placeholder="Masukkan Nama Pelapor" required>
-        </div> 
-        
+            <input class="form-control" type="text" name="nama_pelapor" placeholder="Masukkan Nama Pelapor" required>
+        </div>
+
         <div class="mb-3">
             <label class="form-label" for="phone">No handphone pelapor</label>
             <br>
-            <input class="form-control" type="tel" id="phone" name="telepon" pattern="[0]{1}[8]{1}[0-9]{2}[0-9]{4}[0-9]{4}" placeholder="08XXXXXXXXXX" required>
+            <input class="form-control" type="tel" id="phone" name="telepon"
+                pattern="[0]{1}[8]{1}[0-9]{2}[0-9]{4}[0-9]{4}" placeholder="08XXXXXXXXXX" required>
         </div>
-        
+
         <div class="mb-3">
-            <label class="form-label"for="email">Email pelapor</label>
+            <label class="form-label" for="email">Email pelapor</label>
             <br>
             <input class="form-control" type="email" id="email" name="email" placeholder="Masukkan Email" required>
-        </div>    
+        </div>
         <br>
 
         <input type="hidden" name="status" value="Hilang">
-        <button class="button" type="submit" name="submit_simpan" style="vertical-align:middle"><span>Laporkan Korban Hilang</span></button>
-    <br><br><br>
+        <button class="button" type="submit" name="submit_simpan" style="vertical-align:middle"><span>Laporkan Korban
+                Hilang</span></button>
+        <br><br><br>
     </form>
     <!-- styling css -->
     <style>
@@ -148,7 +153,7 @@ session_start();
             font-family: 'Readex Pro';
         }
 
-        a{
+        a {
             text-decoration: none;
         }
 
@@ -174,8 +179,8 @@ session_start();
             transition: all 0.5s;
             cursor: pointer;
             margin: 5px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            }
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
 
         .button span {
             cursor: pointer;
