@@ -11,7 +11,8 @@ $data = $model->edit($idx);
 <head>
     <title>Edit Data</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,8 @@ $data = $model->edit($idx);
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="#">CariKorban</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -41,7 +43,8 @@ $data = $model->edit($idx);
                         <a class="nav-link" href="dataditemukan.php">Data Ditemukan</a>
                     </li>
                 </ul>
-                <a href="logout.php"><button type="button" class="d-flex btn btn-danger my-2 my-sm-0">Logout</button></a>
+                <a href="logout.php"><button type="button"
+                        class="d-flex btn btn-danger my-2 my-sm-0">Logout</button></a>
             </div>
         </div>
     </nav>
@@ -76,7 +79,7 @@ $data = $model->edit($idx);
         <div class="mb-3">
             <label class="form-label">Tanggal Hilang</label>
             <br>
-            <input class="form-control"type="date" name="tanggal" value="<?= $data->tanggal ?>">
+            <input class="form-control" type="date" name="tanggal" value="<?= $data->tanggal ?>">
         </div>
         <div class="mb-3">
             <label class="form-label" for="hilang">Alasan Hilang</label>
@@ -100,7 +103,7 @@ $data = $model->edit($idx);
             <input class="form-control" type="text" name="nama_pelapor" value="<?= $data->nama_pelapor ?>">
         </div>
         <div class="mb-3">
-            <label class="form-label"for="status">Status</label>
+            <label class="form-label" for="status">Status</label>
             <br>
             <select class="form-control" name="status" id="status" required>
                 <option value="">Pilih Status Korban</option>
@@ -109,10 +112,10 @@ $data = $model->edit($idx);
             </select>
         </div>
         <br>
-            <a href="datahilang.php" class="btn btn-submit btn-space" >Kembali</a>
-            <button type="submit" name="submit_edit" class="btn btn-submit">Update</button>
-            <input type="hidden" name="idx" value="<?= $data->idx ?>">
-        
+        <a href="datahilang.php" class="btn btn-submit btn-space">Kembali</a>
+        <button type="submit" name="submit_edit" class="btn btn-submit">Update</button>
+        <input type="hidden" name="idx" value="<?= $data->idx ?>">
+
         <br><br><br>
     </form>
 
@@ -129,10 +132,10 @@ $data = $model->edit($idx);
             font-family: 'Readex Pro';
         }
 
-        a{
+        a {
             text-decoration: none;
         }
-            
+
 
         form {
             margin: 0 30px;
@@ -149,7 +152,7 @@ $data = $model->edit($idx);
             margin-right: 20px;
         }
 
-        .btn-submit{
+        .btn-submit {
             background-color: #245786;
             color: white;
             border-radius: 10px;
@@ -159,9 +162,10 @@ $data = $model->edit($idx);
             font-size: 16px;
             padding: 8px;
             width: 100px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        .btn-submit:hover{
+
+        .btn-submit:hover {
             background-color: #173652;
             color: white;
         }
