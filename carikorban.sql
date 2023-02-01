@@ -70,7 +70,9 @@ INSERT INTO `korban` (`idx`, `nama_korban`, `hubungan`, `lokasi`, `tanggal`, `al
 (16, 'Ari', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan', NULL, NULL),
 (17, 'Ari', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan', NULL, NULL),
 (18, 'Ari', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan', NULL, NULL),
-(19, 'Ari', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan', NULL, NULL)
+(19, 'Ari', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan', NULL, NULL),
+(20, 'Ana', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan', NULL, NULL),
+(21, 'Ana', 'Anak', 'XXX', '2022-12-05', 'Gempa', 'Berpakaian Lengkap', 'Andi', '087829383635', 'email@gmail.com', 'Ditemukan', NULL, NULL)
 ;
 
 -- --------------------------------------------------------
