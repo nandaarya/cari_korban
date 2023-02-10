@@ -15,8 +15,8 @@ if (isset($_POST['submit_simpan'])) {
     $email = $_POST['email'];
     $status = $_POST['status'];
 
-    $tempdir = "../assets/images/"; //Nama folder tempat menyimpan file
-    $target_path = $tempdir . basename($_FILES['foto']['name']); //set upload path folder
+    $tempdir = "../assets/images/"; 
+    $target_path = $tempdir . basename($_FILES['foto']['name']); 
     $nama_gambar = $_FILES['foto']['name'];
     $fileinfo = @getimagesize($_FILES["foto"]["tmp_name"]);
     $file_gambar = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
