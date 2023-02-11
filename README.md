@@ -14,4 +14,4 @@ Cara Eksekusi Web dengan bantuan XAMPP
 username: admin
 password: admin
 
-Selamat mencoba ! Terbuka untuk saran dan kritikan.
+Selamat mencoba !
