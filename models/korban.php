@@ -63,7 +63,6 @@ class Korban extends Connection
     }
 }
 
-# Path: models\korbanhilang.php
 class KorbanHilang extends Korban
 {
     private $conn;
@@ -97,7 +96,6 @@ class KorbanHilang extends Korban
     }
 }
 
-# Path: models\korbanditemukan.php
 class KorbanDitemukan extends Korban
 {
     private $conn;
