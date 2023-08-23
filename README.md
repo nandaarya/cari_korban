@@ -1,4 +1,7 @@
 # cari_korban
+Sebuah website simple untuk kasus pendataan dan pencarian korban hilang akibat bencana
+
+## Guide/Panduan
 
 Cara run Web dengan bantuan XAMPP !!!
 1. Download file project bbp_proyek ini dalam bentuk zip atau bisa langsung clone di code editor kalian masing-masing.
